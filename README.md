@@ -11,6 +11,6 @@
 - filtrare dupa categorie produs si pret
 
 # Va urma
--posibilitatea de edit al postarilor
--autentificare
+- posibilitatea de edit al postarilor
+- autentificare
 

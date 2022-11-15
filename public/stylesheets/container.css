@@ -1,0 +1,45 @@
+/* product grid */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	/* border: 2.5px solid brown; */
+	border-radius: 10px;
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	max-width: 1200px;
+	padding: 1rem 0;
+}
+
+.product {
+	width: 222px;
+	background-color: white;
+	text-align: center;
+	border-radius: 3px;
+	padding: 10px;
+	border: 2.5px solid brown;
+	border-radius: 5px;
+}
+
+.product_img {
+	width: 180px;
+	height: 220px;
+	object-fit: cover;
+}
+
+.title {
+	color: brown;
+	font-family: "Source Sans Pro", sans-serif;
+	margin: 0.5rem 0;
+}
+
+.price {
+	margin-bottom: 0.5rem;
+}
+
+.posted-on {
+	font-size: 0.8rem;
+}

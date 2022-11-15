@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('./partials/head.ejs') %>
+	<body class="contact-body">
+		<%- include('./partials/nav.ejs') %>
+		<div class="form">
+			<form>
+				<h1>Dacă întâmpini vreo problemă la noi, te așteptăm să ne scrii</h1>
+				<label for="nume">Nume: </label>
+				<input type="text" name="nume" id="nume" />
+				<label for="prenume">Prenume: </label>
+				<input type="text" name="prenume" id="prenume" />
+				<label for="email">Email: </label>
+				<input type="email" name="email" id="email" />
+				<label for="problema">Descrieti problema intampinata</label>
+				<textarea name="problema" id="problema" cols="30" rows="5"></textarea>
+				<button>Submit</button>
+			</form>
+		</div>
+
+		<footer>
+			<p>&copy; Lucaci Eduard 2022</p>
+		</footer>
+	</body>
+</html>

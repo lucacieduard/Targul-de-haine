@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('./partials/head.ejs') %>
+	<body class="product-page-body">
+		<%- include('./partials/nav.ejs') %>
+		<div class="container-single-post">
+			<div class="images">
+				<img
+					src="/uploads/<%=product_data.images[0]  %> "
+					alt=""
+					class="first-img"
+				/>
+				<div class="img">
+					<% product_data.images.forEach(image=>{%>
+					<img src="/uploads/<%=image %> " alt="" /><% }) %>
+				</div>
+			</div>
+			<div class="content">
+				<h1 class="product-title"><%=product_data.title %></h1>
+				<p class="date">
+					Postat : <%=product_data.post_details.date %> -
+					<%=product_data.post_details.time %>
+				</p>
+				<ul>
+					<li>Categorie: <%=product_data.product_category %></li>
+					<li>Gen: <%=product_data.person_category %></li>
+					<li>Marime: <%=product_data.size %></li>
+				</ul>
+				<p class="product-description">
+					Descriere produs: <%=product_data.product_description %>
+				</p>
+				<p class="price-product-page">Pret: <%=product_data.price %> lei</p>
+			</div>
+		</div>
+		<h2 class="h2_color">Cele mai noi produse :</h2>
+		<%- include('./partials/container.ejs') %>
+		<footer class="relative-footer">
+			<p>&copy; Lucaci Eduard 2022</p>
+		</footer>
+	</body>
+</html>

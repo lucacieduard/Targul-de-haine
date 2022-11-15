@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('./partials/head.ejs') %>
+	<body>
+		<%- include('./partials/nav.ejs') %>
+		<div class="form">
+			<form action="/haine/adauga" method="POST" enctype="multipart/form-data">
+				<h1>Adauga un produs!</h1>
+				<label for="title">Titlu produs: </label>
+				<input type="text" name="title" id="title" />
+				<label for="price">Pret: </label>
+				<input type="number" name="price" id="price" min="0" />
+				<label for="person_category">Categorie persoana:</label>
+				<select name="person_category" id="person_category">
+					<option value="-">---</option>
+					<option value="barbati">Barbati</option>
+					<option value="femei">Femei</option>
+					<option value="baieti">Baieti</option>
+					<option value="fete">Fete</option>
+				</select>
+				<label for="category">Categorie produs:</label>
+				<select name="category" id="category">
+					<option value="-">---</option>
+					<option value="tricou">Tricou</option>
+					<option value="pantaloni">Pantaloni</option>
+					<option value="hanorac">Hanorac</option>
+					<option value="bluza">Bluza</option>
+					<option value="geaca">Geaca</option>
+				</select>
+				<label for="size">Marime : </label>
+				<input type="text" name="size" id="size" />
+
+				<label for="description">Descrierea produsului</label>
+				<textarea
+					name="description"
+					id="description"
+					cols="30"
+					rows="5"
+				></textarea>
+				<label for="image">Adauga imaginile tale (maxim 5): </label>
+				<input type="file" name="images" id="uploaded-file" multiple required />
+				<button>Submit</button>
+			</form>
+		</div>
+		<footer class="relative-footer">
+			<p>&copy; Lucaci Eduard 2022</p>
+		</footer>
+	</body>
+</html>

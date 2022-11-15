@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('./partials/head.ejs') %>
+	<body class="contact-body">
+		<%- include('./partials/nav.ejs') %>
+		<div class="all-clothes-header">
+			<img src="/images/<%=category%>.png" alt="" class="category-header-img" />
+			<div class="category-header-content">
+				<h1 class="category-header-title"><%=category.toUpperCase() %></h1>
+				<h2>Cea mai buna selectie de moda potrivita alegerilor tale</h2>
+			</div>
+		</div>
+		<div class="filter">
+			<div class="filter-criterya">
+				<label for="choise">Vezi si : </label>
+				<select name="choise" id="choise" class="filter-d">
+					<% if(category === "barbati") {%>
+					<option value="----">Alege</option>
+					<option value="">Toate hainele</option>
+					<option value="femei">Haine femei</option>
+					<option value="baieti">Haine baieti</option>
+					<option value="fete">Haine fete</option>
+					<% } else if(category === "femei") {%>
+					<option value="----">Alege</option>
+					<option value="">Toate hainele</option>
+					<option value="barbati">Haine barbati</option>
+					<option value="baieti">Haine baieti</option>
+					<option value="fete">Haine fete</option>
+					<% } else if(category === "baieti") {%>
+					<option value="----">Alege</option>
+					<option value="">Toate hainele</option>
+					<option value="femei">Haine femei</option>
+					<option value="barbati">Haine barbati</option>
+					<option value="fete">Haine fete</option>
+					<% } else if(category === "fete"){ %>
+					<option value="----">Alege</option>
+					<option value="">Toate hainele</option>
+					<option value="femei">Haine femei</option>
+					<option value="barbati">Haine barbati</option>
+					<option value="baieti">Haine baieti</option>
+					<% } %>
+				</select>
+				<button><a href="" id="choise-button">&#x2713;</a></button>
+			</div>
+			<div class="filter-criterya">
+				<label for="filter-price">Filtreaza : </label>
+				<select name="filter-price" id="filter-price" class="filter-d">
+					<option value="">Alege</option>
+					<option value="crescator">
+						<a href="/crescator">Pret crescator</a>
+					</option>
+					<option value="descrescator">
+						<a href="/descrescator">Pret descrescator</a>
+					</option>
+				</select>
+				<button type="submit">
+					<a href="" id="submit-filter">&#x2713;</a>
+				</button>
+			</div>
+			<div class="filter-criterya">
+				<label for="category">Categorie produs:</label>
+				<select name="category" id="category-clothes-choise" class="filter-d">
+					<option value="-">Alege</option>
+					<option value="tricou">Tricou</option>
+					<option value="pantaloni">Pantaloni</option>
+					<option value="hanorac">Hanorac</option>
+					<option value="bluza">Bluza</option>
+					<option value="geaca">Geaca</option>
+				</select>
+				<button><a href="" id="cat-cl">&#x2713;</a></button>
+			</div>
+		</div>
+
+		<%- include('./partials/container.ejs') %>
+
+		<footer class="relative-footer">
+			<p>&copy; Lucaci Eduard 2022</p>
+		</footer>
+	</body>
+</html>

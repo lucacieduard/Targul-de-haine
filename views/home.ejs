@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('./partials/head.ejs') %>
+	<body>
+		<%- include('./partials/nav.ejs') %>
+
+		<div class="main">
+			<div class="main-img-container">
+				<img src="/images/home_1.png" alt="clothes" class="main-img" />
+			</div>
+			<div class="home-description">
+				<h1 class="home-title">
+					Hainele tale vechi pot fi acum hainele noi ale altcuiva!
+				</h1>
+				<ul>
+					<li><a href="/haine/barbati">Haine barati</a></li>
+					<li><a href="/haine/femei">Haine femei</a></li>
+					<li><a href="/haine/baieti">Haine baieti</a></li>
+					<li><a href="/haine/fete">Haine fete</a></li>
+				</ul>
+			</div>
+		</div>
+		<h2 class="last-product-text">Cele mai noi articole sunt aici!</h2>
+		<%- include('./partials/container.ejs') %>
+
+		<footer class="relative-footer">
+			<p>&copy; Lucaci Eduard 2022</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<div class="container">
+	<% posts.forEach(post=>{ %>
+	<div class="product">
+		<img src="/uploads/<%=post.images[0]  %> " alt="" class="product_img" />
+		<p class="title"><%=post.title %></p>
+		<div class="product_details">
+			<p class="posted-on">
+				Postat pe: <%=post.post_details.date %> , <%=post.post_details.time %>
+			</p>
+			<p class="price"><%=post.price %> lei</p>
+		</div>
+		<button>
+			<a href="/haine/<%- post.person_category%>/<%= post._id.toString() %> "
+				>Vezi produsul!</a
+			>
+		</button>
+	</div>
+	<% }) %>
+</div>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('./partials/head.ejs') %>
+	<body class="contact-body">
+		<%- include('./partials/nav.ejs') %>
+
+		<div class="all-clothes-header">
+			<img src="/images/shop.png" alt="" class="category-header-img" />
+			<div class="category-header-content">
+				<h1 class="category-header-moto">
+					Aici sunt cele mai fresh haine pentru tine!
+				</h1>
+				<div class="filter-criterya">
+					<label for="choise">Vezi si : </label>
+					<select name="choise" id="choise" class="filter-d">
+						<option value="----">...</option>
+						<option value="">Toate hainele</option>
+						<option value="femei">Haine femei</option>
+						<option value="baieti">Haine baieti</option>
+						<option value="fete">Haine fete</option>
+					</select>
+					<button class="buton-all-clothes">
+						<a href="" id="choise-button">&#x2713;</a>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<%- include('./partials/container.ejs') %>
+
+		<footer class="relative-footer">
+			<p>&copy; Lucaci Eduard 2022</p>
+		</footer>
+	</body>
+</html>
